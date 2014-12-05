@@ -12,6 +12,9 @@ brew install git
 # Additonal GitHub functionality
 brew install hub
 
+# vcprompt helps show version control info in the command prompt
+brew install vcprompt
+
 # wget is useful
 brew install wget
 
