@@ -6,4 +6,7 @@ if [ ! hash brew 2>/dev/null]; then
 fi
 
 # Ensure homebrew packages are installed
-source .brew
+source ./.brew
+
+# Set up OS X defaults
+source ./.osx
