@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Update and upgrade Homebrew
+brew update
+brew upgrade
+
+# Install stuff!
+
+# Git is top of the list
+brew install git
+
+# Additonal GitHub functionality
+brew install hub
+
+# wget is useful
+brew install wget
+
+# Other useful packages
+brew install ansible
+brew install automake
+brew install bash
+brew install gnu-tar
+brew install makedepend
+brew install node
+brew install phpunit
+brew install rbenv
+brew install ruby-build
