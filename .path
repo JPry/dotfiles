@@ -1,0 +1,1 @@
+export PATH=/usr/local/bin:/Users/$USER/bin:/Library/Java/Home/bin:/bin:/usr/local/mysql/bin:$PATH
