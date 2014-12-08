@@ -18,6 +18,15 @@ brew install vcprompt
 # wget is useful
 brew install wget
 
+# Composer
+brew tap homebrew/dupes
+brew tap homebrew/php
+brew install php55
+brew install composer
+
+# Box Project
+brew install box
+
 # Other useful packages
 brew install ansible
 brew install automake
