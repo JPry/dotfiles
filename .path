@@ -1,1 +1,13 @@
-export PATH=/usr/local/bin:/Users/$USER/bin:/Library/Java/Home/bin:/bin:/usr/local/mysql/bin:$PATH
+# Paths in this file should be in order from least important to most important
+
+# Java stuff
+export PATH=/Library/Java/Home/bin:$PATH
+
+# mysql
+export PATH=/usr/local/mysql/bin:$PATH
+
+# ~/bin
+export PATH=$HOME/bin:$PATH
+
+# Homebrew
+export PATH=/usr/local/bin:$PATH
