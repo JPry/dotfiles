@@ -1,7 +1,7 @@
 #!/bin/bash
 
 CWD="$(pwd)"
-DIR="$CWD/../"
+DIR="$CWD/.."
 
 # Create symlinks
 for file in .{aliases,bash_profile,bash_prompt,colors,functions,gitconfig,path}; do
