@@ -22,6 +22,7 @@ brew install wget
 brew tap homebrew/dupes
 brew tap homebrew/php
 brew install php55
+brew install php55-xdebug   # Needed for phpunit
 brew install composer
 
 # Box Project
@@ -31,6 +32,7 @@ brew install box
 brew install ansible
 brew install automake
 brew install bash
+brew install dpkg
 brew install gnu-tar
 brew install makedepend
 brew install node
