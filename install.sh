@@ -1,12 +1,5 @@
 #!/bin/bash
 
-# General variables
-GIT_USER='JPry'
-GIT_REMOTE='jpry'
-WPE_DIR='/wpengine'
-CWD="$(pwd)"
-GROUP="$(id -g -n $USER)"
-
 # We're going to need sudo, so prompt for the password upfront
 sudo -v
 
