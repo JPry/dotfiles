@@ -21,3 +21,6 @@ alias ping='ping -c 5'
 
 # Use hub in place of git
 eval "$(hub alias -s)"
+
+# Shortcut for vagrant
+alias v='vagrant'
