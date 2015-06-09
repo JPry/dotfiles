@@ -12,7 +12,3 @@ source ./.brew
 # Set up OS X defaults
 source ./.osx
 
-# Set up WPE Git repos
-source ./install/wpe_repos.sh
-
-
