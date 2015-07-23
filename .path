@@ -11,3 +11,6 @@ export PATH=$HOME/bin:$PATH
 
 # Homebrew
 export PATH=/usr/local/bin:$PATH
+
+# Custom Ansible
+export PATH=/usr/local/lib/ansible/bin:$PATH
