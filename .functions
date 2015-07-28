@@ -1,21 +1,2 @@
 # Bash functions
 
-function pod() {
-    ssh -i /Users/$USER/.ssh/wpe jpry_@pod-$1.wpengine.com
-}
-
-function rax() {
-    ssh -i /Users/$USER/.ssh/wpe jpry_@sftp$1.wpengine.com
-}
-
-function site() {
-    ssh -i /Users/$USER/.ssh/wpe jpry_@$1.wpengine.com
-}
-
-function lbm() {
-    ssh -i /Users/$USER/.ssh/wpe jpry_@lbmaster-$1.wpengine.com
-}
-
-function dpod() {
-    ssh -i /Users/$USER/.ssh/wpe root@pod-$1.wpengine.com
-}
