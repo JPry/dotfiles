@@ -14,3 +14,8 @@ export PATH=/usr/local/bin:$PATH
 
 # Custom Ansible
 export PATH=/usr/local/lib/ansible/bin:$PATH
+
+# Add RVM to PATH for scripting
+if [[ -e $HOME/.rvm/bin ]]; then
+    export PATH="$PATH:$HOME/.rvm/bin"
+fi
