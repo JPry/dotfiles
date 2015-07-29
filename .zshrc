@@ -42,3 +42,9 @@ for file in ~/.{path,exports,aliases,functions,extra}; do
     [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
+
+# ZSH options
+setopt nopushdminus
+setopt noautocd
+setopt appendhistory
+setopt clobber
