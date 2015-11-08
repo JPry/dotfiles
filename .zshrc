@@ -48,3 +48,6 @@ setopt nopushdminus
 setopt noautocd
 setopt appendhistory
 setopt clobber
+
+# Load pyenv
+eval "$(pyenv virtualenv-init -)"
