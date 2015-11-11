@@ -50,4 +50,5 @@ setopt appendhistory
 setopt clobber
 
 # Load pyenv
+eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
