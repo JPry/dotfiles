@@ -50,5 +50,12 @@ setopt appendhistory
 setopt clobber
 
 # Load pyenv
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+if which pyenv > /dev/null; then
+    eval "$(pyenv init -)"
+    eval "$(pyenv virtualenv-init -)"
+fi
+
+# Load rbenv
+if which rbenv > /dev/null; then 
+    eval "$(rbenv init -)"
+fi
