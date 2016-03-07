@@ -47,7 +47,7 @@ unset file;
 setopt nopushdminus
 setopt appendhistory
 setopt clobber
-unsetopt AUTO_CD
+unsetopt AUTO_PUSHD
 
 # Load pyenv
 if which pyenv > /dev/null; then
