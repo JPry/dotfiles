@@ -45,9 +45,9 @@ unset file;
 
 # ZSH options
 setopt nopushdminus
-setopt noautocd
 setopt appendhistory
 setopt clobber
+unsetopt AUTO_CD
 
 # Load pyenv
 if which pyenv > /dev/null; then
