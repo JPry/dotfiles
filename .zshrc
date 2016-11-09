@@ -55,6 +55,9 @@ if which pyenv > /dev/null; then
     eval "$(pyenv virtualenv-init -)"
 fi
 
+# Load RVM
+[ -r ~/.rvm/scripts/rvm ] && [ -f ~/.rvm/scripts/rvm ] && source ~/.rvm/scripts/rvm
+
 # Load rbenv
 if which rbenv > /dev/null; then 
     eval "$(rbenv init -)"
