@@ -1,7 +1,12 @@
 # COMMAND PROMPT OUTPUT
 
 print_before_the_prompt() {
-    printf "$txtred[%s] $bldblu%s $txtpur%s\n$txtrst" "$USER" "${PWD/$HOME/~}" "$(vcprompt -f '[%n: %b%m%u]')"
+    VC_PROMPT=''
+    if type "vcprompt" > /dev/null 2>&1; then
+        VC_PROMPT="$(vcprompt -f '[%n: %b%m%u]')"
+    fi
+    
+    printf "$txtred[%s] $bldblu%s $txtpur%s\n$txtrst" "$USER" "${PWD/$HOME/~}" "${VC_PROMPT}"
 }
 PROMPT_COMMAND=print_before_the_prompt
 PS1='$ '
