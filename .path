@@ -24,3 +24,8 @@ fi
 if [[ -e /usr/local/heroku/bin ]]; then
     export PATH="/usr/local/heroku/bin:$PATH"
 fi
+
+# Homebrew gettext utils
+if [[ -e /usr/local/opt/gettext/bin ]]; then
+	export PATH="/usr/local/opt/gettext/bin:$PATH"
+fi
