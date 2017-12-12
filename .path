@@ -29,3 +29,9 @@ fi
 if [[ -e /usr/local/opt/gettext/bin ]]; then
 	export PATH="/usr/local/opt/gettext/bin:$PATH"
 fi
+
+# Homebrew PHP 7.1
+if command -v brew >/dev/null 2>&1; then
+	export PATH="$(brew --prefix homebrew/php/php71):$PATH"
+fi
+
