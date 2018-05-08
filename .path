@@ -35,3 +35,7 @@ if command -v brew >/dev/null 2>&1; then
 	export PATH="$(brew --prefix php@7.1):$PATH"
 fi
 
+# Global Composer binaries
+if [[ -e "${HOME}/.composer/vendor/bin" ]]; then
+	export PATH="${HOME}/.composer/vendor/bin:$PATH"
+fi
