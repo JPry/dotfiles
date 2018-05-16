@@ -19,7 +19,7 @@ COMPLETION_WAITING_DOTS="true"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Which plugins would you like to load?
-plugins=(git brew brew-cask git-extras vagrant)
+plugins=(git brew brew-cask git-extras vagrant composer)
 
 # User configuration
 
