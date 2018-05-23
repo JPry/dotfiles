@@ -10,7 +10,7 @@ alias curl-g='curl --user-agent "Googlebot/2.1 (+http://www.google.com/bot.html)
 
 #  Turn on colors with 'ls' command by default
 export LS_OPTIONS='-FG'
-alias ls='ls --color=auto $LS_OPTIONS'
+alias ls="ls $LS_OPTIONS"
 alias ll='ls -la'
 alias l='ls'
 
