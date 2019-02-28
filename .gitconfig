@@ -1,6 +1,7 @@
 [user]
 	name = Jeremy Pry
 	email = jeremy.pry@gmail.com
+	signingkey = B8376DDE9C755D2A
 [core]
 	editor = "nano"
 	excludesfile = ~/.gitignore
@@ -90,6 +91,7 @@
 	# reset
 	unstage = reset HEAD              # remove files from index (tracking)
 	uncommit = reset --soft HEAD^     # go back before last commit, with files in uncommitted state
+	rh = reset --hard HEAD            # reset the current files to the last commit, removing any changes
 	filelog = log -u                  # show changes to a file
 	mt = mergetool                    # fire up the merge tool
 
@@ -152,3 +154,5 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
+[commit]
+	gpgsign = true
