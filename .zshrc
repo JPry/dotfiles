@@ -24,7 +24,7 @@ COMPLETION_WAITING_DOTS="true"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Which plugins would you like to load?
-plugins=(git brew brew-cask git-extras git-prompt github composer)
+plugins=(git brew git-extras git-prompt github composer)
 
 # User configuration
 
