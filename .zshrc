@@ -2,7 +2,12 @@
 export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
-ZSH_THEME="fino"
+ZSH_THEME="jpry"
+
+# Custom ZSH plugins/themes
+if [[ -d "$HOME/dotfiles/zsh-custom" ]]; then
+    ZSH_CUSTOM="$HOME/dotfiles/zsh-custom"
+fi
 
 # Uncomment the following line to use hyphen-insensitive completion.
 HYPHEN_INSENSITIVE="true"
@@ -19,7 +24,7 @@ COMPLETION_WAITING_DOTS="true"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Which plugins would you like to load?
-plugins=(git brew brew-cask git-extras vagrant composer)
+plugins=(git brew brew-cask git-extras git-prompt github composer)
 
 # User configuration
 
