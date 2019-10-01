@@ -37,5 +37,5 @@ fi
 
 # Global Composer binaries
 if [[ -e "${HOME}/.composer/vendor/bin" ]]; then
-	export PATH="${HOME}/.composer/vendor/bin:$PATH"
+	export PATH="${HOME}/.composer/vendor/bin:${HOME}/.composer/bin:$PATH"
 fi
