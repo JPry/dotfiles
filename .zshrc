@@ -24,7 +24,7 @@ COMPLETION_WAITING_DOTS="true"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Which plugins would you like to load?
-plugins=(git brew git-extras git-prompt github composer)
+plugins=(git brew git-extras git-prompt github composer chpwd_profiles)
 
 # User configuration
 
@@ -69,3 +69,7 @@ fi
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
 [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"
+
+if [[ -d "$HOME/projects/Go" ]]; then
+    export GOPATH="$HOME/projects/Go"
+fi
