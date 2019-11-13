@@ -62,6 +62,11 @@
 	last = diff HEAD^                 # diff last committed change
 	files = diff --name-only          # show only changed file names
 
+	# flow without the flow
+	feature = flow feature
+	release = flow release
+	hotfix = flow hotfix
+
 	# log
 	log = log --decorate --graph --date=short
 	l = log
