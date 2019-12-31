@@ -2,12 +2,17 @@
 export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
-ZSH_THEME="jpry"
+#ZSH_THEME="jpry"
+ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Custom ZSH plugins/themes
 if [[ -d "$HOME/dotfiles/zsh-custom" ]]; then
     ZSH_CUSTOM="$HOME/dotfiles/zsh-custom"
 fi
+
+# Powerlevel configuration
+#POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir newline vcs)
 
 # Uncomment the following line to use hyphen-insensitive completion.
 HYPHEN_INSENSITIVE="true"
