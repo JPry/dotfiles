@@ -32,7 +32,7 @@ fi
 
 # Homebrew PHP 7.1
 if command -v brew >/dev/null 2>&1; then
-	export PATH="$(brew --prefix php@7.1):$PATH"
+	export PATH="$(brew --prefix valet-php@7.4):$PATH"
 fi
 
 # Global Composer binaries
