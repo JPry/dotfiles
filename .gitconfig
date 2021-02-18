@@ -82,6 +82,7 @@
 	plr = pull-request                 # pull-request
 
 	# push
+	pf = push --force-with-lease      # force push with lease
 	ps = push                         # push
 	pu = push --set-upstream          # Push and set upstream tracking
 
@@ -161,3 +162,5 @@
 	process = git-lfs filter-process
 [commit]
 	gpgsign = true
+[pull]
+	ff = only
