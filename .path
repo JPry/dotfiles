@@ -9,8 +9,12 @@ export PATH=/usr/local/mysql/bin:$PATH
 # ~/bin
 export PATH=$HOME/bin:$PATH
 
-# Homebrew
-export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+# Path per version of homebrew
+if [[ `uname -m` == 'arm64' ]]; then
+	export PATH=/opt/homebrew/bin:/opt/homebrew/sbin:$PATH
+else
+	export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+fi
 
 # Custom Ansible
 export PATH=/usr/local/lib/ansible/bin:$PATH
@@ -39,3 +43,5 @@ fi
 if [[ -e "${HOME}/.composer/vendor/bin" ]]; then
 	export PATH="${HOME}/.composer/vendor/bin:${HOME}/.composer/bin:$PATH"
 fi
+
+
