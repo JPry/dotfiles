@@ -79,7 +79,7 @@
 	pl = pull                         # pull
 	
 	# pull-request
-	plr = pull-request                 # pull-request
+	plr = pull-request --browse --assign JPry    # pull-request
 
 	# push
 	pf = push --force-with-lease      # force push with lease
