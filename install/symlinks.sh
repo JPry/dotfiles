@@ -4,7 +4,7 @@ CWD="$(pwd)"
 DIR="$CWD/.."
 
 # Create symlinks
-for file in .{aliases,bash_profile,bash_prompt,colors,functions,gitconfig,path,zshrc,gitignore}; do
+for file in .{aliases,bash_profile,bash_prompt,colors,functions,gitconfig,path,zshrc,gitignore,p10k.zsh}; do
     target="$HOME/$file"
     if [[ -L $target ]]; then
         echo "Link exists: $target"

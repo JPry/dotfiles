@@ -1,9 +1,16 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # Set name of the theme to load.
 #ZSH_THEME="jpry"
-ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Custom ZSH plugins/themes
 if [[ -d "$HOME/dotfiles/zsh-custom" ]]; then
@@ -81,3 +88,8 @@ fi
 
 # twilio autocomplete setup
 TWILIO_AC_ZSH_SETUP_PATH="$HOME/.twilio-cli/autocomplete/zsh_setup" && test -f $TWILIO_AC_ZSH_SETUP_PATH && source $TWILIO_AC_ZSH_SETUP_PATH;
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+if [[ -f ~/.p10k.zsh ]]; then
+    source ~/.p10k.zsh
+fi
