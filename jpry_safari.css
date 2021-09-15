@@ -9,3 +9,8 @@ li.stream-item > div[data-promoted=true] {
 	display: none;
 }
 
+/* Hide Obnoxious cookie warnings */
+#onetrust-banner-sdk {
+	display: none;
+}
+
