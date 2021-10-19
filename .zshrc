@@ -90,7 +90,7 @@ if [[ -d "$HOME/projects/Go" ]]; then
 fi
 
 # twilio autocomplete setup
-TWILIO_AC_ZSH_SETUP_PATH="$HOME/.twilio-cli/autocomplete/zsh_setup" && test -f $TWILIO_AC_ZSH_SETUP_PATH && source $TWILIO_AC_ZSH_SETUP_PATH;
+TWILIO_AC_ZSH_SETUP_PATH=/Users/jpry/.twilio-cli/autocomplete/zsh_setup && test -f $TWILIO_AC_ZSH_SETUP_PATH && source $TWILIO_AC_ZSH_SETUP_PATH;
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 if [[ -f ~/.p10k.zsh ]]; then
