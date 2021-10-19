@@ -10,7 +10,8 @@ li.stream-item > div[data-promoted=true] {
 }
 
 /* Hide Obnoxious cookie warnings */
-#onetrust-banner-sdk {
-	display: none;
+#onetrust-banner-sdk,
+#CybotCookiebotDialog {
+	display: none !important;
 }
 
