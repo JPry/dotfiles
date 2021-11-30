@@ -1,0 +1,1 @@
+export WP_TESTS_DIR="${HOME}/Sites/a8c/wp/tests/phpunit"
