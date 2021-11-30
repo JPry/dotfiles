@@ -21,6 +21,3 @@ alias ping='ping -c 5'
 if type "hub" > /dev/null 2>&1; then
   eval "$(hub alias -s)"
 fi
-
-# Shortcut for vagrant
-alias v='vagrant'
