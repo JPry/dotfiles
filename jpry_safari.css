@@ -16,3 +16,10 @@ li.stream-item > div[data-promoted=true] {
 	display: none !important;
 }
 
+/* No Wikipedia $$ begging */
+div.frb,
+.cn-fundraising,
+#frb-inline,
+#frb-nag {
+	display: none !important;
+}
