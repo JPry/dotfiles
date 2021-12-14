@@ -1,12 +1,13 @@
 /* Hide Twitter promotoed items */
 li.stream-item > div[data-promoted=true] {
-	display: none;
+	display: none !important;
 }
 
 /* Sites with annoying Facebook messenger pop-up */
 .fb_dialog,
-.fb_customer_chat_bounce_in_v2 {
-	display: none;
+.fb_customer_chat_bounce_in_v2,
+.js-consent-banner {
+	display: none !important;
 }
 
 /* Hide Obnoxious cookie warnings */
