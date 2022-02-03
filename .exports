@@ -1,2 +1,2 @@
 export WP_TESTS_DIR="${HOME}/Sites/a8c/wp/tests/phpunit"
-
+export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=1
