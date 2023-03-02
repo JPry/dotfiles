@@ -12,7 +12,9 @@ li.stream-item > div[data-promoted=true] {
 
 /* Hide Obnoxious cookie warnings */
 #onetrust-banner-sdk,
-#CybotCookiebotDialog {
+#onetrust-consent-sdk,
+#CybotCookiebotDialog,
+.wt-cli-cookie-bar-container {
 	display: none !important;
 }
 
@@ -23,3 +25,9 @@ div.frb,
 #frb-nag {
 	display: none !important;
 }
+
+
+.a8c-p2.is-p2020-compact-view .tag-p2-xpost.tag-queeromattic {
+	display: none !important;
+}
+
