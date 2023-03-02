@@ -68,7 +68,7 @@
 	hotfix = flow hotfix
 
 	# log
-	log = log --decorate --graph --date=short
+#	log = log --decorate --graph --date=short
 	l = log
 	changes = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\" --name-status
 	short = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\"
