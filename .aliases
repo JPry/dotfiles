@@ -1,7 +1,5 @@
 # Bash aliases
 
-alias lsrebuild='/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain system -domain user'
-alias csafar='dscacheutil -flushcache'
 alias inetuse='lsof -P -i -n | cut -f 1 -d " " | uniq'
 alias changeMAC='SystemStarter start MACADD'
 alias opentxt='open -a TextEdit'
@@ -21,3 +19,6 @@ alias ping='ping -c 5'
 if type "hub" > /dev/null 2>&1; then
   eval "$(hub alias -s)"
 fi
+
+# Spinup WP shorter command
+alias sp='spinupwp'
