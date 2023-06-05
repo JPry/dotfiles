@@ -3,9 +3,6 @@
 # Java stuff
 export PATH=/Library/Java/Home/bin:$PATH
 
-# mysql
-export PATH=/usr/local/mysql/bin:$PATH
-
 # ~/bin
 export PATH=$HOME/bin:$PATH
 
@@ -16,27 +13,14 @@ else
 	export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 fi
 
-# Custom Ansible
-export PATH=/usr/local/lib/ansible/bin:$PATH
-
 # Add RVM to PATH for scripting
 if [[ -e $HOME/.rvm/bin ]]; then
     export PATH="$PATH:$HOME/.rvm/bin"
 fi
 
-# Heroku
-if [[ -e /usr/local/heroku/bin ]]; then
-    export PATH="/usr/local/heroku/bin:$PATH"
-fi
-
 # Homebrew gettext utils
 if [[ -e /usr/local/opt/gettext/bin ]]; then
 	export PATH="/usr/local/opt/gettext/bin:$PATH"
-fi
-
-# Homebrew PHP 7.4
-if command -v brew >/dev/null 2>&1; then
-	export PATH="$(brew --prefix valet-php@7.4):$PATH"
 fi
 
 # Global Composer binaries
