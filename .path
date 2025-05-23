@@ -1,21 +1,10 @@
 # Paths in this file should be in order from least important to most important
 
-# Java stuff
-export PATH=/Library/Java/Home/bin:$PATH
-
-# ~/bin
-export PATH=$HOME/bin:$PATH
-
 # Path per version of homebrew
 if [[ `uname -m` == 'arm64' ]]; then
 	export PATH=/opt/homebrew/bin:/opt/homebrew/sbin:$PATH
 else
 	export PATH=/usr/local/bin:/usr/local/sbin:$PATH
-fi
-
-# Add RVM to PATH for scripting
-if [[ -e $HOME/.rvm/bin ]]; then
-    export PATH="$PATH:$HOME/.rvm/bin"
 fi
 
 # Homebrew gettext utils
@@ -28,4 +17,5 @@ if [[ -e "${HOME}/.composer/vendor/bin" ]]; then
 	export PATH="${HOME}/.composer/vendor/bin:${HOME}/.composer/bin:$PATH"
 fi
 
-
+# ~/bin
+export PATH=$HOME/bin:$PATH
