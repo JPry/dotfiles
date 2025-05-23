@@ -115,6 +115,7 @@
 
 	# submodules
 	su = submodule update
+	sur = submodule update --recursive
 	si = submodule init
 
 	# tag
