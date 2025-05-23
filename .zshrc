@@ -9,7 +9,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # Set name of the theme to load.
-#ZSH_THEME="jpry"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Custom ZSH plugins/themes
@@ -40,19 +39,21 @@ plugins=(git brew git-extras git-prompt github composer)
 
 # User configuration
 
+# Add silent-autoload to NVM plugin.
+# Disabled for now; there seems to be a bug in the plugin when used alongside the powerlevel10k theme's NVM prompt.
+#zstyle ':omz:plugins:nvm' silent-autoload yes
+
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
+# Load and run Oh My Zsh.
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-    export EDITOR='nano'
-else
-    export EDITOR='nano'
-fi
+export EDITOR='nano'
 
 # Load custom files
 for file in ~/.{path,exports,aliases,functions}; do
@@ -73,11 +74,6 @@ if which pyenv > /dev/null; then
     eval "$(pyenv init --path)"
     eval "$(pyenv init -)"
     eval "$(pyenv virtualenv-init -)"
-fi
-
-# Load rbenv
-if which rbenv > /dev/null; then 
-    eval "$(rbenv init -)"
 fi
 
 # Load nvm
