@@ -77,7 +77,7 @@
 
 	# pull
 	pl = pull                         # pull
-	
+
 	# pull-request
 	plr = pull-request --browse --assign JPry    # pull-request
 
@@ -114,9 +114,10 @@
 	stat = status                     # status
 
 	# submodules
-	su = submodule update
-	sur = submodule update --recursive
-	si = submodule init
+	su = submodule update               # update submodules
+	sur = submodule update --recursive  # update submodules recursively
+	si = submodule init                 # init submodules
+	sir = submodule init --recursive    # init submodules recursively
 
 	# tag
 	t = tag -n                        # show tags with <n> lines of each tag message
