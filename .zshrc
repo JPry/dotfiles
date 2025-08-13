@@ -4,12 +4,18 @@ export ZSH=$HOME/.oh-my-zsh
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+if [[ ! -n $CURSOR_TRACE_ID && -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
 # Set name of the theme to load.
-ZSH_THEME="powerlevel10k/powerlevel10k"
+if [[ -n $CURSOR_TRACE_ID ]]; then
+    # Use a simpler theme in Cursor
+    ZSH_THEME="robbyrussell"
+else
+    # Use Powerlevel10k theme normally
+    ZSH_THEME="powerlevel10k/powerlevel10k"
+fi
 
 # Custom ZSH plugins/themes
 if [[ -d "$HOME/dotfiles/zsh-custom" ]]; then
@@ -93,3 +99,6 @@ TWILIO_AC_ZSH_SETUP_PATH=/Users/jpry/.twilio-cli/autocomplete/zsh_setup && test 
 if [[ -f ~/.p10k.zsh ]]; then
     source ~/.p10k.zsh
 fi
+
+#landopath
+export PATH="/Users/jpry/.lando/bin:$PATH";
