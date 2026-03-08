@@ -26,3 +26,7 @@ div.frb,
 	display: none !important;
 }
 
+.jobs-description--reformatted .jobs-description__container {
+	font-size: 16px;
+}
+

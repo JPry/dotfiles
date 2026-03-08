@@ -2,6 +2,10 @@
 	name = Jeremy Pry
 	email = jeremy.pry@gmail.com
 	signingkey = B8376DDE9C755D2A
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg
 [core]
 	editor = "nano"
 	excludesfile = ~/.gitignore
@@ -162,7 +166,5 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
-[commit]
-	gpgsign = true
 [pull]
 	rebase = true
