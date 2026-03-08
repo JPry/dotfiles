@@ -20,9 +20,6 @@ brew install wget
 
 # Composer
 brew tap homebrew/dupes
-brew tap homebrew/php
-brew install php55
-brew install php55-xdebug   # Needed for phpunit
 brew install composer
 
 # Box Project
