@@ -49,7 +49,6 @@ plugins=(git brew git-extras git-prompt github composer)
 # Disabled for now; there seems to be a bug in the plugin when used alongside the powerlevel10k theme's NVM prompt.
 #zstyle ':omz:plugins:nvm' silent-autoload yes
 
-
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # Load and run Oh My Zsh.
@@ -73,27 +72,12 @@ setopt appendhistory
 setopt clobber
 unsetopt AUTO_PUSHD
 
-# Load pyenv
-if which pyenv > /dev/null; then
-    export PYENV_ROOT="$HOME/.pyenv"
-    export PATH="$PYENV_ROOT/bin:$PATH"
-    eval "$(pyenv init --path)"
-    eval "$(pyenv init -)"
-    eval "$(pyenv virtualenv-init -)"
-fi
-
 # Set GOPATH if the directory exists
 if [[ -d "$HOME/projects/Go" ]]; then
     export GOPATH="$HOME/projects/Go"
 fi
 
-# twilio autocomplete setup
-TWILIO_AC_ZSH_SETUP_PATH=/Users/jpry/.twilio-cli/autocomplete/zsh_setup && test -f $TWILIO_AC_ZSH_SETUP_PATH && source $TWILIO_AC_ZSH_SETUP_PATH;
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 if [[ -f ~/.p10k.zsh ]]; then
     source ~/.p10k.zsh
 fi
-
-#landopath
-export PATH="/Users/jpry/.lando/bin:$PATH";
